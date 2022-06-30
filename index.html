@@ -1,0 +1,23 @@
+<html>
+    <script src="https://sdodemo-main-166ce2cf6b6-172-17cdd225001.force.com/professional/lightning/lightning.out.js"></script>
+    <script>
+        $Lightning.use("c:AASSOutApp",    // name of the Lightning app
+            function() {                  // Callback once framework and app loaded
+                $Lightning.createComponent(
+                    "c:AASSOutC", // top-level component of your app
+                    { },                  // attributes to set on the component when created
+                    "LO",   // the DOM location to insert the component
+                    function(cmp) {
+                        // callback when component is created and active on the page
+                    }
+                );
+            },
+            'https://sdodemo-main-166ce2cf6b6-172-17cdd225001.force.com/professional/'  // Site endpoint
+        );
+    </script>
+    <body>
+        <div id="LO">
+            <p>Test</p>
+        </div>
+    </body>
+</html>
